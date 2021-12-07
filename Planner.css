@@ -1,0 +1,376 @@
+body {
+  font-family: 'Libre Caslon Text', serif;
+  background-image: linear-gradient(180deg, rgba(255, 225, 225, 0.8), rgba(255, 225, 225, 0.8)), url('https://images.unsplash.com/photo-1528164344705-47542687000d');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#nav-bar {
+  z-index: 99;
+  display: grid;
+  grid-template-columns: 90px 8fr 1fr 1fr 1fr;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(190, 230, 200, 1);
+}
+
+#header-img {
+  max-width: 50px;
+  max-height: 50px;
+  margin: 15px 15px 15px 15px;
+}
+
+#title {
+  align-self: center;
+  font-size: 1.75em;
+  font-weight: 600;
+}
+
+.text {
+  color: rgba(110, 20, 20, 1);
+}
+
+.nav-link {
+  text-decoration: none;
+  align-self: center;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+section {
+  position: relative;
+  text-align: center;
+  margin: 110px 0px 20px 0px;
+}
+
+#email-description {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+#email, #submit {
+  margin: 1.5em 0px 0px 0px;
+}
+
+#features {
+  display: grid;
+  grid-template-columns: 50px auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 2em;
+  grid-row-gap: 1em;
+  margin: -40px 25% 30px 25%;
+  text-align: left;
+}
+
+.anchor, .anchor2 {
+  margin: -80px 0px 0px 0px;
+  padding: 80px 0px 0px 0px;
+}
+
+.picture {
+  max-width: 45px;
+  max-height: 45px;
+  align-self: center;
+  padding: 10px 10px 10px 10px;
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 10px 10px;
+}
+
+.feature-description-header {
+  height: 40%;
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+.feature-description {
+  height: 60%;
+}
+
+#video {
+  max-width: 100%;
+}
+
+#pricing {
+  display: flex;
+  justify-content: center;
+  margin: -30px 0px 0px 0px;
+}
+
+.anchor3 {
+  margin: -100px 0px 0px 0px;
+  padding: 100px 0px 0px 0px;
+}
+
+.price-selection {
+  background-color: white;
+  margin: 0px 20px 0px 20px;
+  width: 15%;
+  border: 1px solid #000;
+}
+
+.package {
+  background-color: rgba(225, 225, 255, 1);
+  font-weight: bold;
+  padding: 1em 1em 1em 1em;
+}
+
+.price {
+  font-weight: bold;
+  margin: 1em auto 1em auto;
+}
+
+.package-description {
+  margin: 0px 0.8em 0px 0.8em;
+}
+
+.package-select {
+  background-color: rgba(225, 225, 255, 1);
+  margin: 2em 0.8em 3em 0.8em;
+  padding: 1em 1em 1em 1em;
+}
+
+ul {
+  display: inline-block;
+  text-align: left;
+}
+
+#disclaimer {
+  margin: 0px 25% 4em 25%;
+}
+
+@media (max-width: 479px) {
+  #nav-bar {
+    z-index: 99;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 50px 20px 20px 20px;
+    grid-template-areas:
+      "logo planner-service"
+      "features features"
+      "tips tips"
+      "pricing pricing";
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(190, 230, 200, 1);
+    padding: 10px 0px 15px 0px;
+  }
+
+  #header-img {
+    max-width: 35px;
+    max-height: 35px;
+    margin: 0px 10px 0px 10px;
+  }
+
+  #title {
+    margin: -18px 0px 0px 15px;
+    font-size: 1.30em;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1em;
+  }
+
+  #features-link {
+    grid-area: features;
+    margin: -10px 0px 0px 0px;
+  }
+
+  #tips-link {
+    grid-area: tips;
+    margin: 10px 0px 15px 0px;
+  }
+
+  #pricing-link {
+    grid-area: pricing;
+  }
+
+  section {
+    margin: 40px 0px 20px 0px;
+    width: 100%;
+  }
+
+  #email-description {
+    margin: 0px 5px 0px 5px;
+  }
+
+  #features {
+    display: flex;
+    flex-direction: column;
+    margin: -100px 5px 40px 5px;
+  }
+
+  .anchor {
+    margin: -130px 0px 0px 0px;
+    padding: 130px 0px 0px 0px;
+  }
+
+  .picture {
+    display: none;
+  }
+
+  .feature-description-header {
+    color: rgba(250,120,0,1);
+    text-decoration: underline;
+  }
+
+  .anchor2 {
+    margin: -150px 0px 0px 0px;
+    padding: 150px 0px 0px 0px;
+  }
+
+  #vid-description {
+    margin: 0px 8px 1.5em 8px;
+  }
+
+  #video {
+    max-width: 93%;
+  }
+
+  #pricing {
+    display: flex;
+    flex-direction: column;
+    margin: -80px 0px 0px 0px;
+  }
+
+  .anchor3 {
+    margin: -150px 0px 0px 0px;
+    padding: 150px 0px 0px 0px;
+  }
+
+  .price-selection {
+    margin: 0px 10px 25px 10px;
+    min-width: 93%;
+    max-width: 93%;
+  }
+
+  #disclaimer {
+    font-size: 0.85em;
+    margin: -10px 8px 175px 8px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 900px) {
+  #nav-bar {
+    z-index: 99;
+    display: grid;
+    grid-template-columns: 80px 4fr 1fr;
+    grid-template-rows: 20px 20px 20px;
+    grid-template-areas:
+      "logo planner-service features"
+      "logo planner-service tips"
+      "logo planner-service pricing";
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(190, 230, 200, 1);
+    padding: 10px 0px 15px 0px;
+  }
+
+  #header-img {
+    grid-area: logo;
+    max-width: 50px;
+    max-height: 50px;
+    margin: 5px 15px 5px 15px;
+  }
+
+  #title {
+    grid-area: planner-service;
+    align-self: center;
+    font-size: 1.75em;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+
+  #features-link {
+    grid-area: features;
+  }
+
+  #tips-link {
+    grid-area: tips;
+  }
+
+  #pricing-link {
+    grid-area: pricing;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 500;
+  }
+
+  section {
+    margin: 95px 0px 20px 0px;
+  }
+
+  #features {
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+    margin: -40px 20px 30px 30px;
+  }
+
+  .anchor {
+    margin: -70px 0px 0px 0px;
+    padding: 70px 0px 0px 0px;
+  }
+
+  .picture {
+    max-width: 50px;
+    max-height: 50px;
+    align-self: center;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .feature-list {
+    margin: auto 0px auto 0px;
+  }
+
+  .feature-description-header {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: rgba(250,120,0,1);
+    text-decoration: underline;
+  }
+
+  .feature-description {
+    height: initial;
+  }
+
+  #vid-description {
+    margin: 20px 35px 30px 35px;
+  }
+
+  #pricing {
+    display: flex;
+    flex-direction: column;
+    margin: -25px 0px 0px 0px;
+  }
+
+  .price-selection {
+    margin: 0px auto 25px auto;
+    min-width: 90%;
+    max-width: 90%;
+  }
+
+  .package-description {
+    margin: 0px 25px 0px 25px;
+  }
+
+  #disclaimer {
+    font-size: 0.5em;
+    margin: -10px 25px 175px 25px;
+  }
+}

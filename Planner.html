@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Japan Trip Planner Service</title>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Planner.css"/>
+</head>
+
+<body>
+  <header id="header">
+    <nav id="nav-bar">
+      <a href="#header"><img id="header-img" src="https://i.imgur.com/jaqlf1Z.jpg" alt="Japan Trip Planner Service logo"></a>
+      <h1 id="title" class="text">Japan Trip Planner Service</h1>
+      <a href="#features" id="features-link" class="text nav-link">Features</a>
+      <a href="#tips" id="tips-link" class="text nav-link">Tips</a>
+      <a href="#pricing" id="pricing-link" class="text nav-link">Pricing</a>
+    </nav>
+  </header>
+  <section>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <div id="email-description">Submit your email to be notified on the latest deals and news!</div>
+      <label for="email">
+      <input id="email" class="field" type="email" placeholder="Enter your email" name="email" required>
+      </label>
+      <br>
+      <input id="submit" type="submit" value="Submit email">
+    </form>
+    <div id="features" class="anchor">
+      <img class="picture" src="https://i.imgur.com/jaqlf1Z.jpg" alt="Customized itinerary">
+      <div class="feature-list">
+        <div id="feature-1" class="feature-description-header">Customized</div>
+        <div id="feature-1-description" class="feature-description">Just fill up this <a href="https://codepen.io/Songluck/pen/wvKmqBV">survey form</a> and we'll come up with an itinerary that is tailored to your travel preferences!</div>
+      </div>
+      <img class="picture" src="https://i.imgur.com/jaqlf1Z.jpg" alt="Convenient">
+      <div class="feature-list">
+        <div id="feature-2" class="feature-description-header">Convenient</div>
+        <div id="feature-2-description" class="feature-description">Select the price package of your choice after completing the <a href="https://codepen.io/Songluck/pen/wvKmqBV">survey form</a>, sit back and relax while we do the planning for you!</div>
+      </div>
+      <img class="picture" src="https://i.imgur.com/jaqlf1Z.jpg" alt="Comprehensive service">
+      <div class="feature-list">
+        <div id="feature-3" class="feature-description-header">Comprehensive</div>
+        <div id="feature-3-description" class="feature-description">All price packages contain a planning document covering customized minute-by-minute itinerary, important local contact numbers, forcasted weather, attraction details and more!</div>
+      </div>
+    </div>
+    <div id="tips" class="anchor2">
+      <p id="vid-description">If this is your first trip to Japan, check out this useful video from <a href="https://www.youtube.com/channel/UCfFrsS14viloVm1dKqHSoxQ">Japan Guide</a>!</p>
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/00ZXaXIABMY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div id="pricing" class="anchor3">
+      <div id="price-1" class="price-selection">
+        <div class="package">Standard Package<sup>1</sup></div>
+        <div class="price">$2/day (trip duration)</div>
+        <div class="package-description">Planning document will be sent to you within 2 weeks<sup>3</sup> of receipt of completed survey form and payment.</div>
+        <form>
+          <label for="package-1">
+          <input id="package-1" class="package-select" type="submit" value="SELECT" name="package-1">
+          </label>
+        </form>
+      </div>
+      <div id="price-2" class="price-selection">
+        <div class="package">Urgent Package<sup>2</sup></div>
+        <div class="price">$5/day (trip duration)</div>
+        <div class="package-description">Planning document will be sent to you within
+          <ul>
+            <li>24h (if trip duration = 1-7 days)</li>
+            <li>48h (if trip duration = 8-14 days)</li>
+          </ul>
+        <br>
+        of receipt of completed survey form and payment.</div>
+        <form>
+          <label for="package-2">
+          <input id="package-2" class="package-select" type="submit" value="SELECT" name="package-2">
+          </label>
+        </form>
+      </div>
+      <div id="price-3" class="price-selection">
+        <div class="package">Early Bird Package</div>
+        <div class="price">$1.50/day (trip duration)</div>
+        <div class="package-description">Submit the completed survey form and payment to us at least 2 months before your intended trip start date to enjoy the discount!
+        <br>
+        <br>
+        Planning document will be sent to you within 2 weeks<sup>3</sup> of receipt of completed survey form and payment.
+        </div>
+        <form>
+          <label for="package-3">
+          <input id="package-3" class="package-select" type="submit" value="SELECT" name="package-3">
+          </label>
+        </form>
+      </div>
+    </div>
+    <br>
+    <div id="disclaimer"><sup>1</sup> Standard Package is not available for trips commencing within 2 weeks of submission of survey form and payment.
+    <br>
+    <br>
+    <sup>2</sup> Urgent Package is not available for trip duration that is more than 14 days.
+    <br>
+    <br>
+    <sup>3</sup> Additional time might be required for us to complete the planning document if your trip lasts longer than 14 days. In such a case, please submit the completed survey form without making payment, and we will advise you in an email accordingly.
+    </div>
+  </section>
+</body>
+</html>
